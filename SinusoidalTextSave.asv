@@ -1,0 +1,14 @@
+function SinusoidalTextSave(file)
+    f = getappdata(0,'Frequency');
+    fs = getappdata(0,'SampleRate');
+    seconds = getappdata(0,'Seconds');
+    signalRep = getappdata(0,'signalRepresentation');
+    signalProcess = getappdata(0,'signalProcess');
+    signalType = getappdata(0,'signalType');
+    disp(signalRep)
+    disp(signalProcess)
+    disp(signalType)
+    C = {'Frequency',f;'Sample Rate',fs;'Seconds',seconds;'Signal Representation'...
+        ,signalRep;'Signal Process', signalProcess;'SignalType',s}
+    save(file, 'f','fs','seconds','signalRep', 'signalProcess' ...
+        ,'signalType','-ASCII', '-append');

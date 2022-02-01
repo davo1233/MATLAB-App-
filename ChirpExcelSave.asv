@@ -1,0 +1,12 @@
+function ChirpExcelSave(file)
+    t = getappdata(0,'Seconds');
+    f0 = getappdata(0,'StartFrequency');
+    fs = getappdata(0,'SampleRate');
+    f1 = getappdata(0,'ReferenceFrequency');
+    t1 = getappdata(0,'ReferenceTime');
+    signalType = getappdata(0,'signalType');
+    signalRep = getappdata(0,'signalRepresentation');
+    signalProcess = getappdata(0,'signalProcess');
+    A = {'Start Frequency','Sample Rate','Duration','Signal Type','Signal Representation','Signal Process', 'Reference Time', 'Reference Frequency' ;f0,fs,t,signalType,signalRep,signalProcess,t1,f1};
+    xlswrite(file,A);
+

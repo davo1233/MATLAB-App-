@@ -1,0 +1,12 @@
+function TextLoad(file)
+    A = readcell(file);
+    a = numel(A);
+    disp(A);
+    signalT
+    if numel(A) == 10
+        ChirpTextLoad(A)
+    else
+        SinusoidalTextLoad(A)
+    end
+
+    

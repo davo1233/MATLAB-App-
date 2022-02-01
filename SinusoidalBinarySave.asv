@@ -1,0 +1,34 @@
+function SinusoidalBinarySave(file)
+    f = getappdata(0,'Frequency');
+    fs = getappdata(0,'SampleRate');
+    duration = getappdata(0,'Duration');
+    signalRep = getappdata(0,'signalRepresentation');
+    signalRepBin = convertRepToBinary(signalRep);
+    signalProcess = getappdata(0,'signalProcess');
+    signalProcessBin = convertProcToBinary(signalProcess);
+    signalType = getappdata(0,'signalType');
+    TestSignal = getappdata(0,'TestSignal');
+    A = [f,fs,duration,signalRepBin,signalProcessBin,signalType,TestSignal];
+    fileID = fopen(file,'w');
+    fwrite(fileID,A);
+    fclose(fileID);
+
+function integer = convertRepToBinary(signalRep)
+    switch signalRep
+        case 'Real'
+            integer = 1;
+        case 'IQ'
+            integer = 2;
+    end
+
+function integer = convertProcToBinary(signalProcess)
+    switch signalProcess
+        case 'Hilbert'
+            integer = 1;
+        case 'Spectrogram'
+            integer = 2;
+    end 
+
+function integer = convertTypeToBinary(signalType)
+    switch s
+

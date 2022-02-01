@@ -1,0 +1,6 @@
+SignalType,Sinusoidal
+Frequency,60
+Sample Rate,8000
+Seconds,5
+Signal Representation,Real
+Signal Process,Hilbert

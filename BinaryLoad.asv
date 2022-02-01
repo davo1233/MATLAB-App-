@@ -1,0 +1,10 @@
+function BinaryLoad(file)
+    fileID = fopen(file,'rb');
+    signalType = fread(fileID,[6],'uint64');
+    switch signalType
+        case 1
+            SinusoidalBinaryLoad(fileID)
+        case 2
+            ChirpBinaryLoad(fileID)
+    end
+    fclose(fileID);

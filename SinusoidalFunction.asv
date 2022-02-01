@@ -1,0 +1,4 @@
+defclass SinusoidalFunction
+methods (Acce)
+    function openSinusoid()
+        sinusoidal

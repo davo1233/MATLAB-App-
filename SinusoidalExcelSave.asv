@@ -1,0 +1,11 @@
+function SinusoidalExcelSave(file)
+    f = getappdata(0,'Frequency');
+    sampleRate = getappdata(0,'SampleRate');
+    t = getappdata(0,'Seconds');
+    type = getappdata(0,'signalType');
+    
+    signalRep = getappdata(0,'signalRepresentation');
+    signalProcess = getappdata(0,'signalProcess');
+    signalType = getappdata(0,'signalType');
+    A = {'Frequency','Sample Rate','Duration',' Signal Type','Signal Representation', 'Signal Process', 'Signal Type' ;f,sampleRate,t,type,signalRep,signalProcess,signalType};
+    xlswrite(file,A); 
