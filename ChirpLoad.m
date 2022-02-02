@@ -7,4 +7,3 @@ function ChirpLoad(s)
     setappdata(0,'TestSignal',s.testSignal);
     setappdata(0,'signalRepresentation',s.signalRep);
     setappdata(0,'signalProcess',s.signalProcess);
-    createTestSignalChirp();
