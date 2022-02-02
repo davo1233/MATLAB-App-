@@ -1,8 +1,0 @@
-StartFrequency,0
-Sample Rate,1000
-Reference Frequency,500
-Reference Time,1
-Seconds,5
-Signal Representation,Real
-Signal Process,Hilbert
-SignalType,Chirp
