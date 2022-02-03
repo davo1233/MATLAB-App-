@@ -1,5 +1,5 @@
 function ChirpBinarySave(file)
-[seconds,duration,f0,fs,f1,t1,signalType,signalRep,signalProcess,TestSignal] = getChirpValues();
+    [seconds,duration,f0,fs,f1,t1,signalType,signalRep,signalProcess,TestSignal] = getChirpValues();
     signalTypeBin = 2;
     signalRepBin = convertRepToBinary(signalRep);
     signalProcessBin = convertProcToBinary(signalProcess);
