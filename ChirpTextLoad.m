@@ -1,6 +1,5 @@
 function  ChirpTextLoad(A)
-%UNTITLED13 Summary of this function goes here
-%   Detailed explanation goes here
+% loads the variables from the text file
     setappdata(0,'StartFrequency',A{2,2});
     setappdata(0,'SampleRate',A{3,2});
     setappdata(0,'ReferenceFrequency',A{4,2});

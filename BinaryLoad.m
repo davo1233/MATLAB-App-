@@ -1,3 +1,5 @@
+% wrapper function to load the relevant binary function
+% based on the type of signal 
 function BinaryLoad(file)
     fileID = fopen(file,'rb');
     A = fread(fileID,'uint64');

@@ -1,3 +1,4 @@
+% saves the chirp graph into a binary format
 function ChirpBinarySave(file)
     [seconds,duration,f0,fs,f1,t1,signalType,signalRep,signalProcess,TestSignal] = getChirpValues();
     signalTypeBin = 2;
